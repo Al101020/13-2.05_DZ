@@ -1,5 +1,5 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/qaohysnffdwi7h2o?svg=true)](https://ci.appveyor.com/project/Al101020/13-2-05-dz)
-<br><br>
+<br>ссылка: https://al101020.github.io/13-2.05_DZ/<br>
 
 # 13-2.05_DZ
 занятие: Работа с HTML-формами
