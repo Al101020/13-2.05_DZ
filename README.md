@@ -26,4 +26,5 @@ Popovers
 3. в https://ci.appveyor.com/project/Al101020/13-2-05-dz/settings/badges скопировал бейджик в READMY.md
 4. В настройках https://github.com/Al101020/13-2.05_DZ/settings/pages выбрал GitHub Actions
 5. Далее нажал "create your own", ввел название файла web.yml и нажал "commit changes..."
-6. 
+6. Клонировал себе на ПК
+7. Скопирова проект из листинга и из проекиа занятия(13-2.05), прописал node.js
