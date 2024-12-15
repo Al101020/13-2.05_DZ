@@ -1,3 +1,23 @@
+.popovers {
+    position: relative;
+    margin-bottom: 5px;
+    border: 1px dashed black;
+    border-radius: .5rem;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+
+.btnPopovers {
+    margin-top: 150px;
+    background-color: aqua;
+    border-radius: .3rem;
+}
+
+/*
+
+
+
 p {
     color: black;
 }
@@ -6,9 +26,7 @@ form {
     margin-top: 200px;
 }
 
-:invalid {
-    /* border: 1px solid red */
-}
+
 
 .btn {
     display: inline-block;
@@ -34,4 +52,4 @@ form {
     background: #fff;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
     z-index: 999;
-}
+} */
