@@ -10,8 +10,13 @@
 
 .btnPopovers {
     margin-top: 150px;
-    background-color: aqua;
-    border-radius: .3rem;
+    color: white;
+    background-color: #da3b4a;
+    /* border-radius: .3rem; */
+    border-color: #da3b4a;
+    border-radius: 5px;
+    height: 40px;
+    width: 170px;
 }
 
 /*
