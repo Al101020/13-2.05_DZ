@@ -8,47 +8,18 @@ const attributevalue = "And here's some amazing content. It's very engaging. Rig
 btnPopovers.setAttribute(attributename, attributevalue);
 
 btnPopovers.addEventListener('click', () => {
-  // console.log('клик');
-  const massege = document.querySelector('.btnPopovers').getAttribute('data-content');
-  // console.log(massege);
-
-  const tooltipElement = document.createElement('div');
-
-  tooltipElement.classList.add('messagePopovers');
-  tooltipElement.textContent = massege;
-
-  document.body.appendChild(tooltipElement);
+  const btnPopoverYesNo = document.querySelector('.messagePopovers');
+  if (btnPopoverYesNo) {
+    btnPopoverYesNo.remove();
+  } else {
+    const massege = document.querySelector('.btnPopovers').getAttribute('data-content');
+    const tooltipElement = document.createElement('div');
+    tooltipElement.classList.add('messagePopovers');
+    tooltipElement.textContent = massege;
+    document.body.appendChild(tooltipElement);
+    const { right, top } = btnPopovers.getBoundingClientRect();
+    const { width } = tooltipElement.getBoundingClientRect();
+    tooltipElement.style.left = `${right - width / 2 - 170 / 2}px`;
+    tooltipElement.style.top = `${top - 5 - tooltipElement.offsetHeight}px`;
+  }
 });
-
-// function showTooltip(element) {
-//     let massege = document.querySelector('.btnPopovers').getAttribute("data-content");
-//     console.log(massege);
-
-//     console.log('element');
-//         // const tooltipElement = document.createElement('div');
-//         // tooltipElement.classList.add('messageButton');
-
-//         // console.log('btnPopovers => click');
-//         // console.log(this);
-
-//             // console.log(element.getAttribute('data-content'));
-//             // element.appendChild(tooltipElement);
-//             // tooltipElement.textContent =
-//     };
-
-// import showTooltip from "./tooltip";
-// function showTooltip(element) {
-//     console.log(element);
-//         console.log(this);
-
-//     // constructor() {
-//     //     this._tooltip = this;
-//     // }
-
-//     // showTooltip(element) {
-//     //     console.log(element);
-//     //     console.log(this);
-//     // }
-// };
-
-// const tooltipFactory = showTooltip();showTooltip('body');// e.preventDefault();

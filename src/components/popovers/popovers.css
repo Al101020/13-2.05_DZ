@@ -1,5 +1,6 @@
 .popovers {
     position: relative;
+    background-color: #def7d6;
     margin-bottom: 5px;
     border: 1px dashed black;
     border-radius: .5rem;
