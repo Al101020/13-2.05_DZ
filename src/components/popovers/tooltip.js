@@ -1,15 +1,15 @@
 console.log('tooltip.js');
 
 export default class Tooltip {
-    constructor() {
-        this._tooltip = this;
-    }
+  constructor() {
+    this._tooltip = this;
+  }
 
-    showTooltip(element) {
-        console.log(element);
-        console.log(this);
-    }
-};
+  showTooltip(element) {
+    console.log(element);
+    console.log(this);
+  }
+}
 
 // export default function showTooltip(element) {
 //     const tooltipElement = document.createElement('div');
@@ -19,7 +19,7 @@ export default class Tooltip {
 //     console.log(this);
 //     // console.log(element.getAttribute('data-content'));
 //     // element.appendChild(tooltipElement);
-//     // tooltipElement.textContent = 
+//     // tooltipElement.textContent =
 // };
 
-// export class 
+// export class
