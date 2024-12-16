@@ -15,8 +15,15 @@ btnPopovers.addEventListener('click', () => {
     const massege = document.querySelector('.btnPopovers').getAttribute('data-content');
     const tooltipElement = document.createElement('div');
     tooltipElement.classList.add('messagePopovers');
-    tooltipElement.textContent = massege;
+    const popoverText = document.createElement('p');
+    popoverText.textContent = massege;
+    tooltipElement.prepend(popoverText);
+    const popoverTitle = document.createElement('p');
+    popoverTitle.innerHTML = '<b>Popover Title</b><br>';
+    tooltipElement.prepend(popoverTitle);
+
     document.body.appendChild(tooltipElement);
+
     const { right, top } = btnPopovers.getBoundingClientRect();
     const { width } = tooltipElement.getBoundingClientRect();
     tooltipElement.style.left = `${right - width / 2 - 170 / 2}px`;
